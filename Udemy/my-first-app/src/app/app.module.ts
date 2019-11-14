@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { ServerComponent } from './server/server.component'; //Type script feature
+
+//App Module is a bundle of functions
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerComponent //Angular knows it there, but Typescript has no clue where it is
   ],
   imports: [
     BrowserModule,
