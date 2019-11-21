@@ -14,5 +14,6 @@ import { Component } from '@angular/core';
     templateUrl: 'server.component.html' // Template 
 }) //Class Decorator, Pass a Javascript object, store meta-data
 export class ServerComponent{
-
+    serverId: number = 10;
+    serverStatus: string = 'offline';
 }
