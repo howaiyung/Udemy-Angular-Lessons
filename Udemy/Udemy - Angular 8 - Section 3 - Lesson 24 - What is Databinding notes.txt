@@ -1,0 +1,20 @@
+Databinding = Communication
+
+-Output Data
+1. It is the way to output TypeScript Code (Business Logic) to be displayed in the Template (HTML)
+
+There are 2 main ways of doing it:
+
+1. String Interpolation: ({{ data }})
+2. Property Binding: ([property]="data")
+
+-React to (User) Events
+Responsive design (Trigger events). It is to detect a (specific) event from the HTML side and do something in the TypeScript Code side.
+
+1. Event Binding: ((event)="expression")
+
+-Two-Way-Binding
+This allows to react to event and output data at the same time.
+
+1. Two-Way-Binding ( [(ngModel)] )
+
