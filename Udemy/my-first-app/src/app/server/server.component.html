@@ -1,4 +1,6 @@
-<p>{{ 'server' }} with ID {{ serverId }}</p>
+<!-- <p>{{ 'server' }} with ID {{ serverId }} is {{ serverStatus }}</p>-->
+
+<p>{{ 'server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
 
 <!--
 
@@ -6,6 +8,14 @@ String interpolation syntax is represented as {{ }} where you can write a TypeSc
 The most common usage for using {{ }} is to reference a property stated in the typescript file, ie. server.component.ts
 
 The other use case is that you can hard-code a string in the expression.
+As long a string is returned in the {{ }} expression, or can be converted into a string, like a number.
+For example, it can call a method in the {{ }} as long as a string is returned in the end.
+
+Restrictions:
+-Can't write multi-line expressions.
+-Can't write block expressions. (Add 'if' or 'for' structure)
+
+-You can use a ternary expression
 
 
 -->
