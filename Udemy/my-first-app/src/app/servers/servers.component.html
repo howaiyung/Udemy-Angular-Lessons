@@ -2,12 +2,19 @@
 <button
    class="btn btn-primary"
    [disabled]="!allowNewServer">Add Server</button>
+<!-- <p>{{ allowNewServer }}</p> --> <!-- You can do string interpolation with this expression -->
+<p [innerText]="allowNewServer"></p> <!-- This is a way of replacing string interpolation with property binding -->
+<!-- [disabled]="{{!allowNewServer}}">Add Server</button> --> <!-- Do not mix string interpolation with property binding, it'll break-->
+
 <app-server></app-server>
 <app-server></app-server>
 
 
 <!--
-    [] or square brackets in html indicates property binding that we want to dynamically bind some property to that html element.
-    You can essentially bind all properties from typescript and bind them to the properties of HTML elements.
-
+    Rule of thumb:
+    1. Use String Interpolation when if you want to output something to the template, or print some text.
+    2. Use Property Binding when you want to change the property of a HTML element, Directive, or component. 
+    3. String Interpolation only works in a normal template.
+       - Not within another expression of that template.
+       - Not within property binding.
 -->
